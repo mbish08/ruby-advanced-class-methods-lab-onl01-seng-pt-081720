@@ -34,6 +34,7 @@ class Song
   
   def self.find_or_create_by_name(title)
     lookup = self.find_by_name(title).include?(title)
+    if lookup
       lookup 
     else 
       self.create_by_name(title)
