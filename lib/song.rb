@@ -37,7 +37,6 @@ class Song
       lookup 
     else 
       self.create_by_name(title)
-      title 
     end 
   end 
 end
